@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Musicians</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="./js/artists.js"></script>
+    <script src="./js/index.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li class="navitem"><a href="./index.html">Home</a></li>
+                <li class="navitem"><a href="./artists.html">Musicians</a></li>
+                <li class="navitem"><a href="./albums.html">Albums</a></li>
+                <li class="navitem"><a href="./profile.html">My Profile</a></li>
+                <li>
+                    <div id="loginButtonOrUsername"></div>
+                    <script>
+                        window.addEventListener('load', renderLoginButtonOrUsername);
+                    </script>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div style="text-align: center">
+        <form>
+            <label for="genresSelectList">Music genre: </label>
+            <select id="genresSelectList" onchange="displayArtists()">
+                <option value="" selected>Select genre</option>
+            </select>
+        </form>
+    </div>
+
+    <div id="artistsContainer">
+
+    </div>>
+
+    <div id="footer"></div>
+</body>
+
+</html>
